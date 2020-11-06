@@ -1,0 +1,46 @@
+body {
+    color: #666666;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+header {
+    background-image: url(buku.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+nav {
+    background-color: red;
+    padding: 32px;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+nav a {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav input {
+    float: right;
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: grey;
+}
+
+footer {
+    height: 200px;
+    background-color: red;
+    text-align: center;
+}
