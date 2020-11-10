@@ -1,40 +1,41 @@
-
 body{
-    margin: 0;
+    margin: 0px;
     padding: 0;
-    font-family: sans-serif;
-    background: url(badak.jpg) no-repeat;
+    outline: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-image: url(badak.jpg) no-repeat;
     background-size: cover;
-  }
-  .login-box{
+}
+.login-box{
     width: 280px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
-  }
-  .login-box h1{
+    color: lightskyblue;
+}
+.login-box h1{
     float: left;
-    font-size: 40px;
-    border-bottom: 6px solid #4caf50;
-    margin-bottom: 50px;
-    padding: 13px 0;
-  }
-  .textbox{
+    font-size: 35px;
+    color: #ff0707;
+    border-bottom: 5px solid #000000;
+    margin-bottom: 5px;
+    padding: 15px 0;
+}
+.text{
     width: 100%;
     overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
-  }
-  .textbox i{
+    font-size: 17px;
+    padding: 10px o;
+    margin: 10px 0;
+    border-bottom: 1px solid #000000;
+}
+.text i{
     width: 26px;
     float: left;
     text-align: center;
   }
-  .textbox input{
+  .text input{
     border: none;
     outline: none;
     background: none;
