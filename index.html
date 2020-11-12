@@ -3,40 +3,56 @@
 
 <head>
     <title>E-Jurnal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
+<style>
+    header {
+        height: 1000px;
+    }
+    
+    .judul {
+        margin-left: 300px;
+        margin-top: 150px;
+        color: whitesmoke;
+        font-size: 40pt;
+    }
+    
+    .cari {
+        padding: 20px;
+        width: 700px;
+        margin-left: 300px;
+        margin-top: 0;
+        border: 2px;
+        border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    footer {
+        margin-top: 400px;
+        height: 200px;
+        background-color:black;
+        opacity: 50%;
+        text-align: center;
+    }
+</style>
 
 <body>
-    <header>
+    <header style="background-image: url(/gambar/bunga.jpg);">
         <nav>
-            <ul>
+            <ul class="navtop">
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tema</a></li>
-                <li style="float : right"><a href="#">Sign in</a></li>
+                <li><a href="Teknologi.html">Terbaru</a></li>
+                <li style="float : right"><a href="coba.html">Sign in</a></li>
             </ul>
-            <!-- <a href="#">Beranda</a>
-            <a href="#">Tema</a>
-            <a style="float : right" href="#">Sign in</a> -->
             <input type="text" placeholder="Search">
         </nav>
-        <h1>E-Jurnal</h1>
+        <h1 class="judul">E-Jurnal</h1>
+        <h2 class="cari" style="color: aliceblue;">Senyum - mu Semangat - ku</h2>
+        <input type="text" placeholder="Cari Jurnal" class="cari">
+        <footer>
+            footer
+        </footer>
     </header>
-    <section>
-        <article>
-            <figure>
-                <!-- <img src="jurnal.jpg" alt="IT"> -->
-                <figcaption>Jurnal Informatika:Pengembangan IT</figcaption>
-            </figure>
-            <hgroup>
-                <h2>Jurnal Informatika</h2>
-                <h3>Pengembangan IT</h3>
-            </hgroup>
-            <p>dawjdbadbawdvashxbkahbxakbahb</p>
-        </article>
-    </section>
-    <footer style="height: 100px;">
-        footer
-    </footer>
 </body>
 
 </html>
