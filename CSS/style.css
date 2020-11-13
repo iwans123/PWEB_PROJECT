@@ -53,6 +53,7 @@
     hgroup {
         margin: 10px;
         padding: 10px;
+        color: black;
     }
     
     hgroup {
@@ -66,6 +67,7 @@
     p {
         padding: 5px;
         font-size: 12pt;
+        color: black;
     }
     
     hgroup>img {
@@ -76,32 +78,41 @@
     
     aside {
         width: 20%;
-        height: 760px;
+        height: 245px;
+        border-radius: 5px;
         margin-right: 5px;
-        background-color: lightgray;
+        background-color: whitesmoke;
         float: right;
     }
     
-    .aside {
-        padding: 5px;
-        padding-left: 10px;
-        margin: 0;
-        height: 25%;
-        background-color: whitesmoke;
-        border-radius: 5px;
+    .tema {
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
     }
     
-    .aside h2 {
+    .tema>a {
+        padding: 5px;
+        padding-right: 30%;
+        text-align: left;
+        border-bottom: 2px solid green;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .aside>h2 {
         text-align: center;
     }
     
     .daftar {
-        margin-left: 80px;
+        margin-left: 85px;
         padding: 10px;
         width: 100px;
         text-decoration: none;
         color: black;
         background-color: lightblue;
+        border: 2px solid green;
         border-radius: 5px;
     }
     
