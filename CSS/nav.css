@@ -118,7 +118,7 @@ footer{
 }
 footer p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     margin-top: 125px;
     text-align: center;
@@ -130,7 +130,7 @@ footer p{
     }
 }
 /* mobile */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 480px){
     nav ul{
         position: absolute;
         left: 0;
