@@ -15,7 +15,7 @@ body{
 }
 /* navigasi */
 nav{
-     display: flex;
+    display: flex;
     background-color: whitesmoke;
     justify-content: space-between;
     height: 70px;
@@ -28,7 +28,7 @@ nav{
     font-family: 'old';
     font-size: 30px;
 }
-.logo span:nth-last-child(1){
+.logo span{
     font-family: 'athena';
     font-size: 50px;
     color: purple;
@@ -111,6 +111,17 @@ nav ul li a:hover{
 .menu-toogle input:checked ~ span:nth-child(3){
     transform: scale(0);
     opacity: 0; 
+}
+footer{
+    background-color: whitesmoke;
+    height: 200px;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+    margin-top: 125px;
+    text-align: center;
 }
 /* tablet */
 @media screen and (max-width: 768px){

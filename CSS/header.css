@@ -1,7 +1,18 @@
+/* page1 */
+header{
+    background-image: url('../gambar/gantung1.png');
+    background-size: 100%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 580px;
+}
+/* page2 */
 .flex-header{
     display: flex;
     flex-direction: row;
-    height: 550px;
+    height: 575px;
 }
 .header-font{
     display: flex;
@@ -31,5 +42,9 @@
         width: 100%;
         text-align: center;
         font-size: 60px;   
+    }
+    header{
+        position: relative;
+        z-index: -2;
     }
 }

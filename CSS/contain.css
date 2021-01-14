@@ -1,12 +1,50 @@
+/* page 1 */
+.container{
+    display: flex;
+    flex-direction: column;
+    border: rgb(226, 223, 223) solid;
+    border-width: 10px;
+    border-radius: 10px;
+    margin: 50px;
+}
+.tittle{
+    text-align: center;
+    font-family: 'old';
+    font-size: 50px;
+}
+.flex-container{
+    display: flex;
+    padding: 50px;
+}
+.contain-image{
+    display: flex;
+}
+.contain-image img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px #888888;
+}
+.contain-font{
+    font-size: 50px;
+    font-family: 'old';
+    padding: 30px;
+    flex: 1;
+}
+.contain-font p:nth-child(2){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+/* page 2 */
 .judul-contain{
     padding-top: 50px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'old';
     font-size: 30px;
 }
 .flex-contain{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -18,6 +56,7 @@
 .bingkai{
     padding: 5px;
     border-radius: 10px;
+    margin-bottom: 50px;
     box-shadow: 5px 5px 5px 2px #888888;
 }
 .flex-contain img{
@@ -53,11 +92,18 @@
 }
 
 @media screen and (max-width: 576px){
+    /* page1 */
+    .flex-container{
+        flex-direction: column;
+    }
+    /* page2 */
     .flex-contain{
         flex-direction: column;
-        justify-content: space-around;
+        text-align: center;
     }
     .bingkai{
         width: 55%;
+        margin: auto;
+        margin-bottom: 50px;
     }
 }

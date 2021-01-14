@@ -1,58 +1,86 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>E-Jurnal</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanduran</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/contain.css">
 </head>
-<style>
-    header {
-        height: 800px;
-    }
-    
-    .judul {
-        margin-left: 300px;
-        margin-top: 150px;
-        color: whitesmoke;
-        font-size: 40pt;
-    }
-    
-    .cari {
-        padding: 20px;
-        width: 700px;
-        margin-left: 300px;
-        margin-top: 0;
-        border: 2px;
-        border-radius: 4px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    footer {
-        margin-top: 200px;
-        height: 300px;
-        background-color: black;
-        opacity: 50%;
-        text-align: center;
-    }
-</style>
-
 <body>
-    <header style="background-image: url(/gambar/bunga.jpg);">
-        <nav>
-            <ul class="navtop">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="Teknologi.html">Terbaru</a></li>
-                <li style="float : right"><a href="coba.html">Sign in</a></li>
-            </ul>
-            <input type="text" placeholder="Search">
-        </nav>
-        <h1 class="judul">E-Jurnal</h1>
-        <h2 class="cari" style="color: aliceblue;">Senyum - mu Semangat - ku</h2>
-        <input type="text" placeholder="Cari Jurnal" class="cari">
-        <footer>
-            footer
-        </footer>
+    <nav>
+        <div class="menu-toogle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <span>T</span>
+            anduran
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Teknologi.html">Shop</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+        <div class="login">
+            <a href="coba.html">Sign in</a>
+        </div>
+    </nav>
+    <header>
     </header>
+    <!-- contain kiri -->
+    <div class="container">
+    <P class="tittle">PILIH TANDURANMU SEKARANG</P>
+    <div class="flex-container">
+        <div class="contain-image">
+            <img src="gambar/hias1.jpeg" width="300px" height="300px">
+        </div>
+        <div class="contain-font">
+            <p>Lemon lime</p>
+            <p>Sekilas mirip dengan daun pandan, bentuk daun yang mirip pedang ini terdapat kombinasi warna hijau, kuning terang, dan putih menjadikannya terlihat sangat manis. Tanaman ini lebih baik diletakkan di tempat teduh yang cenderung lembab.</p>
+        </div>
+    </div>
+    <!-- contain kanan -->
+    <div class="flex-container">
+        <div class="contain-font">
+            <p>Lemon lime</p>
+            <p>Sekilas mirip dengan daun pandan, bentuk daun yang mirip pedang ini terdapat kombinasi warna hijau, kuning terang, dan putih menjadikannya terlihat sangat manis. Tanaman ini lebih baik diletakkan di tempat teduh yang cenderung lembab.</p>
+        </div>
+        <div class="contain-image">
+            <img src="gambar/hias1.jpeg" width="300px" height="300px">
+        </div>
+    </div>
+    <!-- contain kiri -->
+    <div class="flex-container">
+        <div class="contain-image">
+            <img src="gambar/hias1.jpeg" width="300px" height="300px">
+        </div>
+        <div class="contain-font">
+            <p>Lemon lime</p>
+            <p>Sekilas mirip dengan daun pandan, bentuk daun yang mirip pedang ini terdapat kombinasi warna hijau, kuning terang, dan putih menjadikannya terlihat sangat manis. Tanaman ini lebih baik diletakkan di tempat teduh yang cenderung lembab.</p>
+        </div>
+    </div>
+    <!-- contain kanan -->
+    <div class="flex-container">
+        <div class="contain-font">
+            <p>Lemon lime</p>
+            <p>Sekilas mirip dengan daun pandan, bentuk daun yang mirip pedang ini terdapat kombinasi warna hijau, kuning terang, dan putih menjadikannya terlihat sangat manis. Tanaman ini lebih baik diletakkan di tempat teduh yang cenderung lembab.</p>
+        </div>
+        <div class="contain-image">
+            <img src="gambar/hias1.jpeg" width="300px" height="300px">
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <span>T</span>
+            anduran
+            <p>copyright 2021@Tanduran</p>
+        </div>
+    </footer>
 </body>
-
+<script src="JS/humberger.js"></script>
 </html>
