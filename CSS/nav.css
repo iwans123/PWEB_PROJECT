@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'old';
+    src:url('../font/old.ttf');
+}
+@font-face{
+    font-family: 'athena';
+    src: url('../font/Athena.ttf');
+}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+        overflow-x: hidden;
+}
+/* navigasi */
+nav{
+     display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    color: black;
+}
+/* logo */
+.logo{
+    margin-left: 10px;
+    font-family: 'old';
+    font-size: 30px;
+}
+.logo span:nth-last-child(1){
+    font-family: 'athena';
+    font-size: 50px;
+    color: purple;
+}
+/* menu navigasi */
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    }
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+}
+nav ul li a:hover{
+    color: rgb(204, 95, 204);
+}
+/* login */
+.login{
+    background-color: purple;
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.login:hover{
+    background-color: rgb(204, 95, 204);
+}
+.login a{
+    text-decoration: none;
+    color: white;      
+}
+    /* menu-humberger */
+.menu-toogle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 10px;
+}
+.menu-toogle input{
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    left: -10px;
+    top: -1px;
+    opacity: 0;
+    cursor: pointer ;
+    z-index: 2;
+}
+.menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all .5s;
+}
+/* hamburger animation */
+.menu-toogle span:nth-child(2){
+    transform-origin: 0 0 ;
+}
+.menu-toogle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toogle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px); 
+}
+.menu-toogle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg); 
+}
+.menu-toogle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0; 
+}
+/* tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+/* mobile */
+@media screen and (max-width: 576px){
+    nav ul{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: grey;
+        z-index: -1;
+        transform: translatex(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .login{
+        width: 20%;
+    }
+    .menu-toogle{
+        display: flex;
+    }
+}

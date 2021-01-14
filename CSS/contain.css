@@ -1,0 +1,63 @@
+.judul-contain{
+    padding-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.flex-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: rgb(226, 223, 223) solid;
+    border-width: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.bingkai{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px #888888;
+}
+.flex-contain img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.flex-contain p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+.posisi{
+    text-align: center;
+}
+.pencet{
+    background-color: purple;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.pencet span{
+    font-family: 'old';
+    font-size: 20px;
+}
+.pencet:hover{
+    background-color: rgb(219, 112, 219);
+    transition: .5s;
+}
+
+@media screen and (max-width: 576px){
+    .flex-contain{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bingkai{
+        width: 55%;
+    }
+}
