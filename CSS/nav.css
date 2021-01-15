@@ -6,21 +6,24 @@
     font-family: 'athena';
     src: url('../font/Athena.ttf');
 }
-    *{
-        margin: 0;
-        padding: 0;
-    }
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
         overflow-x: hidden;
 }
 /* navigasi */
 nav{
+    position: fixed;
+    width: 100%;
     display: flex;
     background-color: whitesmoke;
     justify-content: space-between;
     height: 70px;
     align-items: center;
     color: black;
+    box-shadow: 0px 2px 5px 2px #888888;
 }
 /* logo */
 .logo{
@@ -64,7 +67,8 @@ nav ul li a:hover{
 .login:hover{
     background-color: rgb(204, 95, 204);
 }
-.login a{
+.login{
+    font-size: 20px;
     text-decoration: none;
     color: white;      
 }
@@ -114,13 +118,18 @@ nav ul li a:hover{
 }
 footer{
     background-color: whitesmoke;
-    height: 200px;
 }
-footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: black;
-    margin-top: 125px;
+.contact{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.bijak{
+    font-family: 'old';
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+footer p:nth-child(4){
     text-align: center;
 }
 /* tablet */
@@ -131,6 +140,7 @@ footer p{
 }
 /* mobile */
 @media screen and (max-width: 480px){
+    /* navbar */
     nav ul{
         position: absolute;
         left: 0;
@@ -141,10 +151,14 @@ footer p{
         align-items: center;
         justify-content: space-evenly;
         background-color: grey;
-        z-index: -1;
         transform: translatex(-100%);
         transition: all 1s;
         opacity: 0;
+        z-index: -1;
+    }
+    
+    nav ul li a:hover{
+        color: rgb(204, 95, 204);
     }
     nav ul.slide{
         opacity: 1;
@@ -155,5 +169,9 @@ footer p{
     }
     .menu-toogle{
         display: flex;
+    }
+    /* footer */
+    footer .logo{
+        text-align: center;
     }
 }
