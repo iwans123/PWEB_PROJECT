@@ -42,6 +42,17 @@ header p:nth-child(2){
     width: 70%;
 }
 /* page 3 */
+.header-about{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    padding-top: 100px;
+}
+.header-about p{
+    font-family: 'old';
+    font-size: 40px;
+    text-align: center;
+}
 @media screen and (max-width: 576px){
     .flex-header{
         position: relative;

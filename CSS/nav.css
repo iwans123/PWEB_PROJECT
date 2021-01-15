@@ -118,6 +118,7 @@ nav ul li a:hover{
 }
 footer{
     background-color: whitesmoke;
+    border-top: 5px solid grey;
 }
 .contact{
     margin-left: 30px;
